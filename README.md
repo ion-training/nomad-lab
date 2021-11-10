@@ -12,7 +12,7 @@ This repo contains a nomad server and a nomad client that runes workloads.
   x                x                  x      Docker    x                  x                x
   xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx
           | .71                               | .72                                    |.70
-          |-----------------------------------|------------------------------------|
+          |-----------------------------------|----------------------------------------|
                                        192.168.56.0/24       
 ```
 # How to use this repo
