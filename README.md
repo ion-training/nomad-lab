@@ -2,12 +2,12 @@
 
 This repo contains a nomad server and a nomad client that runes workloads.
 
-Topology
+# Topology
 ```
 
   xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx
   x                x                  x                x                  x                x
-  x     server     x                  x     client     x                  x     RSYSLOG    x
+  x     server     x                  x     client     x                  x     syslog     x
   x  nomad server  x                  x  nomad client  x                  x                x
   x                x                  x    container   x                  x                x
   xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx
@@ -25,7 +25,7 @@ cd nomad-lab
 ```
 Vagrant up
 ```
-vagrant up
+vagrant up --provision
 ```
 Check status of VMs and their names 
 ```
@@ -41,10 +41,40 @@ Server
 ```
 vagrant ssh server
 ```
-Rsyslog
+Syslog
 ```
-vagrant ssh rsyslog
+vagrant ssh syslog
 ```
 
-# Sample output
+To stop the machines (you can stop individual machines only), from nomad-lab
+```
+vagrant halt
+```
 
+Destroy machines
+```
+vagrant destroy
+```
+
+# code organization
+
+```
+tree
+.
+├── LICENSE
+├── README.md
+├── Vagrantfile
+├── conf
+│   ├── client
+│   │   ├── nomad-bash-env.sh
+│   │   ├── nomad.hcl
+│   │   └── nomad.service
+│   └── server
+│       ├── nomad-bash-env.sh
+│       ├── nomad.hcl
+│       └── nomad.service
+└── scripts
+    ├── client.sh
+    ├── server.sh
+    └── syslog.sh
+```
