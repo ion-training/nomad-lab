@@ -1,6 +1,9 @@
 # Nomad LAB
 
-This repo contains a nomad server and a nomad client that runes workloads.
+This repo contains code that creates three virtual machines:
+- server: running nomad agent in sever mode
+- client: running nomad agent client mode
+- syslog: which is a ubuntu machine running syslog service
 
 # Topology
 ```
