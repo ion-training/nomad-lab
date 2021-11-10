@@ -9,7 +9,7 @@ This repo contains a nomad server and a nomad client that runes workloads.
   x                x                  x                x                  x                x
   x     server     x                  x     client     x                  x     syslog     x
   x  nomad server  x                  x  nomad client  x                  x                x
-  x                x                  x    container   x                  x                x
+  x                x                  x      Docker    x                  x                x
   xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx
           | .71                               | .72                                    |.70
           |-----------------------------------|------------------------------------|
