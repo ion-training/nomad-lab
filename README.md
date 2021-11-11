@@ -1,6 +1,6 @@
 # Nomad LAB
 
-This repo contains code that creates three virtual machines Vagrant:
+This repo contains code that creates three virtual machines using Vagrant:
 - server: running nomad agent in sever mode
 - client: running nomad agent client mode
 - syslog: which is a ubuntu machine running syslog service
