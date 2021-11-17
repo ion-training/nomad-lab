@@ -1,10 +1,10 @@
 datacenter = "dc1"
 data_dir = "/opt/nomad"
 
-bind_addr = "192.168.56.72"
+bind_addr = "192.168.56.75"
 
 advertise {
-  http = "192.168.56.72"
+  http = "192.168.56.75"
 }
 
 client {
