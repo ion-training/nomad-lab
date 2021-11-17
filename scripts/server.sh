@@ -26,10 +26,10 @@ chmod 700 /etc/nomad.d
 cp -ap /vagrant/conf/server/nomad.hcl /etc/nomad.d/
 chown -R nomad: /etc/nomad.d /opt/nomad/
 
-cp -ap /vagrant/conf/server/nomad.service /etc/systemd/system/
+cp -ap /vagrant/conf/nomad.service /etc/systemd/system/
 
 # nomad set bash env
-cp -ap /vagrant/conf/server/nomad-bash-env.sh /etc/profile.d/
+cp -ap /vagrant/conf/nomad-bash-env.sh /etc/profile.d/
 
 systemctl enable nomad
 systemctl start nomad
