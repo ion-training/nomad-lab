@@ -49,7 +49,7 @@ Syslog
 vagrant ssh syslog
 ```
 
-To stop the machines (you can stop individual machines only), from nomad-lab
+To stop the machines, from nomad-lab
 ```
 vagrant halt
 ```
