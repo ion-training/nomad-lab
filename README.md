@@ -14,7 +14,7 @@ This repo contains code that creates three virtual machines using Vagrant:
   x  nomad server  x                  x  nomad client  x                  x                x
   x                x                  x      Docker    x                  x                x
   xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx                  xxxxxxxxxxxxxxxxxx
-          | .71                               | .72                                    |.70
+          | .71                               | .75                                    |.51
           |-----------------------------------|----------------------------------------|
                                        192.168.56.0/24       
 ```
