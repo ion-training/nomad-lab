@@ -31,10 +31,6 @@ cp -ap /vagrant/conf/nomad.service /etc/systemd/system/
 # nomad set bash env
 cp -ap /vagrant/conf/nomad-bash-env.sh /etc/profile.d/
 
-systemctl enable nomad
-systemctl start nomad
-
-
 # install docker
 apt-get install -y ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -47,4 +43,8 @@ apt-get install -y docker-ce docker-ce-cli containerd.io
 curl -fsSL https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 
 # facilitate nomad access to docker
-sudo usermod -G docker -a nomad
+usermod -G docker -a nomad
+
+# Enable Nomad service
+systemctl enable nomad
+systemctl start nomad
